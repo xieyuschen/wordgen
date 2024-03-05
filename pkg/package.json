@@ -1,0 +1,14 @@
+{
+  "name": "wordgen",
+  "version": "0.1.0",
+  "files": [
+    "wordgen_bg.wasm",
+    "wordgen.js",
+    "wordgen.d.ts"
+  ],
+  "module": "wordgen.js",
+  "types": "wordgen.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
