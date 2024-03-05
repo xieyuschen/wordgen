@@ -1,4 +1,4 @@
-import init, { process } from 'http://localhost:8080/pkg/wordgen.js';
+import init, { process } from './pkg/wordgen.js';
 
 // Initialize the WASM module
 async function initializeWasm() {

@@ -11,7 +11,6 @@ pub async fn process(input: &[u8]) -> js_sys::Promise {
     let input = input.to_owned();
     future_to_promise(async move {
         let words: Vec<&str> = std::str::from_utf8(&input).unwrap().split(",").collect();
-        // let dic_key = std::env::var("DICKEY").unwrap();
         let mut result: Vec<Word> = vec![];
         for word in words.iter() {
             let details = get_response(&word).await;
